@@ -55,6 +55,7 @@ html {
     color: #0f2336;
     outline: none;
     border: none;
+    background: white;
 }
 
 .header__btn {
