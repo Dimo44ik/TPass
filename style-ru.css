@@ -967,6 +967,25 @@ html {
     letter-spacing: 0.01em;
     color: #0cc;
     margin-bottom: 15px;
+    position: relative;
+}
+
+.footer .footer__title::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #0cc;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.7s;
+}
+
+.footer .footer__title:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .footer__inner-list {
